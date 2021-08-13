@@ -8,6 +8,7 @@ The first step is to build the dataset. For this purpose, the following methods 
 - Flickr Scraper: https://github.com/ultralytics/flickr_scraper
 - Unsplash Scraper: https://www.scrapestorm.com/
 - Download All Images Extension: https://chrome.google.com/webstore/detail/download-all-images/ifipmflagepipjokmbdecpmjbibjnakm
+
 Always make sure you have the right to use the images you download before starting training.
 
 In order to be able to generate credible galaxies in our case, the Galaxy Zoo dataset was also used as a dataset in one of the experiments:
