@@ -26,7 +26,7 @@ The gan.py file was used to train an initial model capable of generating 128x128
 # Presenting the results
 The repositories used already offer some approaches for generating grids or evolutions of the images obtained. For our own needs, we have created the file create_grid.py which generates a grid of NxM images.
 
-Below we show some of the results obtained from the grids:
+Below we show some of the results obtained from the GANs:
 
 GENERATED CELESTIAL BODIES V1
 ![GENERATED CELESTIAL BODIES V1](https://github.com/davide-coccomini/gan-universe/blob/main/examples/Generated%20Celestial%20Bodies%20v1.png)
