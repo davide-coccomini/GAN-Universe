@@ -92,11 +92,14 @@
       }
       function nextImages(){
         $(".grid-container").fadeOut(500).promise().done(function(){
-            for(var i = 0; i < 7; i++){
+          already_extracted = [];
+          for(var i = 0; i < 7; i++){
+            do 
               id = getRandomInt(current_max).toString()
-              $($(".image")[i]).attr("src", current_path + id + ".jpg");
-            }
-            $(".grid-container").fadeIn(500)
+            while(already_extracted.includes(id))
+            $($(".image")[i]).attr("src", current_path + id + ".jpg");
+          }
+          $(".grid-container").fadeIn(500)
         });
       }
       function showMenu(){
