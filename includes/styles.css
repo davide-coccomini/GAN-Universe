@@ -57,7 +57,7 @@ canvas {
   font-size: 13px;
   font-weight: bold;
   padding: 15px;
-  height:2vh;
+  max-height:2vh;
   margin-left:20px;
   margin-right:20px;
   word-spacing: normal;
@@ -100,7 +100,7 @@ img {
   height: 100%;
   object-fit: cover;
   transform: scale(calc(1 + .2*var(--hl)));
-  filter: brightness(calc(.6*(1 + var(--hl))));
+  filter: brightness(calc(.9*(1 + var(--hl))));
   transition: .7s;
 }
 
@@ -108,7 +108,7 @@ img:hover {
   --hl: 0.5;
 }
 .grid-container {
-    --l: calc(20vw/var(--n-cols));
+  --l: calc(30vw/var(--n-cols));
   --hl: calc(.5*var(--l));
   --ri: calc(.5*1.73205*var(--l));
   box-sizing: border-box;
@@ -119,6 +119,12 @@ img:hover {
   overflow: hidden;
   margin: 0;
   padding: var(--hl) 0;
-  height: 40vh;
+  height: 60vh;
   filter: drop-shadow(2px 2px 5px);
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .grid-container {
+    --l: calc(50vw/var(--n-cols));
+    height: 35vh;
+  }
 }
