@@ -1,6 +1,9 @@
 # Generative Adversarial Network - Generating Universe
 This repository contains part of the code used to make the images visible in the article "How does an AI Imagine the Universe?" published on Towards Data Science: 
 https://towardsdatascience.com/how-does-an-ai-imagine-the-universe-d1d01139b50a
+
+You can also explore the dataset on https://davide-coccomini.github.io/GAN-Universe/
+
 The aim of the article was to create a dataset of celestial bodies and then train a Generative Adversarial Network to generate new ones. Then real galaxy images were used to generate new ones and merge them into a single wide view of space.
 
 # Images Scraping
